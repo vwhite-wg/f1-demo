@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking</title>
+     <link rel="icon" href="./assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="up"></section>
+    <section class="down"></section>
+    <section class="left"></section>
+    <section class="right"></section>
+    <header>
+    </header>
+    <main>
+      <div class="track-container">
+        <h1>Track MAC Address</h1>
+        <label for="macAddresses">Choose a MAC address:</label>
+        <select id="macAddresses" name="macAddresses">
+            <option value="00:11:22:33:44:55">00:11:22:33:44:55</option>
+            <option value="66:77:88:99:AA:BB">66:77:88:99:AA:BB</option>
+            <option value="CC:DD:EE:FF:00:11">CC:DD:EE:FF:00:11</option>
+            <option value="22:33:44:55:66:77">22:33:44:55:66:77</option>
+        </select>
+        <div class="iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10222.92027377683!2d-122.41964!3d37.77711!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNTQnMDcuMCJTIDEyMsKwMjAnMTcuMyJF!5e0!3m2!1sen!2sus!4v1615463831687!5m2!1sen!2sus" 
+              width="600" height="450" style="border:1px solid white;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      </div>
+      <button id="home-bttn" onclick="handleSubmit()">Home</button>
+    </main>
+    <footer class="footer">
+        <h6>© Copyright 2022 Wireless Guardian Venue Security and Threat Detection.</h6>
+    </footer>
+     <script>
+      function handleSubmit(e) {
+        window.location.href = './index.html';
+      }
+    </script>
+</body>
+</html>

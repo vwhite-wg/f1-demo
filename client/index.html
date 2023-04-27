@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigint Data Map</title>
+    <link rel="icon" href="./assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <section class="up"></section>
+    <section class="down"></section>
+    <section class="left"></section>
+    <section class="right"></section>
+    <header>  
+    </header>
+    <main>
+        <div class="">
+           
+        </div>
+        <div class="site-form-container">
+             <h1 class="site-title">MAC Lookup</h1>
+            <form onsubmit="handleSubmit(event)" id="site-form">
+                <label for="macAddress">Enter Site ID:</label>
+                <input type="text" id="macAddress" name="macAddress" class="site-input"/>
+                <input type="submit" value="Submit" class="button-13" />
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <h6>© Copyright 2022 Wireless Guardian Venue Security and Threat Detection.</h6>
+    </footer>
+    <script>
+      function handleSubmit(e) {
+        e.preventDefault();
+        window.location.href = './sigint.html';
+      }
+    </script>
+  </body>
+</html>

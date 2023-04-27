@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sigint Data Map | Siginits</title>
+     <link rel="icon" href="./assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <section class="up"></section>
+    <section class="down"></section>
+    <section class="left"></section>
+    <section class="right"></section>
+    <header>
+    </header>
+    <main>
+      <div class="sigint-page">
+        <h1 class="site-title">Enter Sigints</h1>
+        <form class="sigint-form" onsubmit="handleSubmit(event)">
+          <label for="sigint1">Sigint 1:</label>
+          <input type="text" id="sigint1" name="sigint" required />
+          <label for="sigint2">Sigint 2:</label>
+          <input type="text" id="sigint2" name="sigint" required />
+          <label for="sigint3">Sigint 3:</label>
+          <input type="text" id="sigint3" name="sigint" required />
+          <label for="sigint3">Sigint 4:</label>
+          <input type="text" id="sigint3" name="sigint" />
+          <label for="sigint3">Sigint 5:</label>
+          <input type="text" id="sigint3" name="sigint" />
+          <label for="sigint3">Sigint 6:</label>
+          <input type="text" id="sigint3" name="sigint" />
+          <input class ="button-13" type="submit" value="Submit" />
+        </form>
+      </div>
+    </main>
+     <footer class="footer">
+        <h6>© Copyright 2022 Wireless Guardian Venue Security and Threat Detection.</h6>
+    </footer>
+    <script>
+      function handleSubmit(e) {
+        e.preventDefault();
+        window.location.href = './tracking.html';
+      }
+    </script>
+  </body>
+</html>
